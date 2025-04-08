@@ -1,0 +1,116 @@
+/* Κοινό styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Styling για το welcome screen */
+.fade-container {
+    text-align: center;
+    color: rgb(255, 255, 255); /* Λευκό κείμενο για αντίθεση */
+    font-size: 1em; /* Αλλάζεις το μέγεθος όπως θέλεις */
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/back.jpg'); /* URL της εικόνας */
+    background-size: cover;
+    background-position: center;
+}
+
+
+.fade-container h1,h2 {
+    border-radius: 10px; /* Στρογγυλεμένες γωνίες */
+}
+
+/* Εφέ fade out */
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+/* SHOP.HTML */
+
+/* Reset βασικού styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Το container για τις εικόνες */
+.image-container {
+    display: flex; /* Flexbox για τοποθέτηση δίπλα-δίπλα */
+    width: 100vw; /* Καλύπτει όλο το πλάτος της οθόνης */
+    height: 100vh; /* Καλύπτει όλο το ύψος της οθόνης */
+}
+
+.image-box {
+    position: relative; /* Για να μπορέσουμε να τοποθετήσουμε το κείμενο πάνω από τις εικόνες */
+    width: 50%; /* Κάθε εικόνα να καλύπτει το μισό πλάτος */
+    height: 100%; /* Κάθε εικόνα να καλύπτει όλο το ύψος */
+}
+
+.half-width {
+    width: 100%; /* Τοποθέτηση της εικόνας */
+    height: 100%; /* Την κάνει να καλύπτει όλο το box */
+    object-fit: cover; /* Κρατάει τις αναλογίες των εικόνων και γεμίζει τον χώρο */
+}
+
+/* Στυλ για τα κουμπιά (κείμενο) */
+.centered-text {
+    position: absolute; /* Απόλυτη τοποθέτηση πάνω από την εικόνα */
+    top: 50%; /* Κεντράρισμα κατακόρυφα */
+    left: 50%; /* Κεντράρισμα οριζόντια */
+    transform: translate(-50%, -50%); /* Ακριβές κεντράρισμα */
+    color: white; /* Λευκό κείμενο για αντίθεση */
+    font-size: 3em; /* Μεγάλο μέγεθος κειμένου */
+    font-family: 'Playfair Display', serif; /* Αλλαγή γραμματοσειράς */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Σκιά για έμφαση */
+    text-decoration: none; /* Αφαιρούμε την υπογράμμιση από τα links */
+ 
+    padding: 10px 20px; /* Εσωτερικά κενά για να μοιάζει με κουμπί */
+    border-radius: 5px; /* Στρογγυλεμένες γωνίες */
+    transition: background-color 0.3s ease; /* Εφέ μετάβασης */
+}
+
+.centered-text:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Αλλαγή φόντου στο hover */
+}
+
+.text-box h1 {
+    font-size: 60px; /* Μεγαλύτερο μέγεθος */
+    font-weight: bold;
+    color: white; /* Λευκό χρώμα */
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Σκιά για καλύτερη ανάγνωση */
+    margin: 10px 0; /* Κενά γύρω από τους τίτλους */
+}
+
+.text-box h2 {
+    font-size: 40px; /* Λίγο μικρότερο από το h1 */
+    font-weight: 400;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    font-size: 1em;
+    font-weight: 100;
+    margin: 10px 0; /* Κενά γύρω από τους τίτλους */
+}
+
+/* .text-box {
+
+    padding: 20px 20px; /* Χώρος γύρω από το κείμενο */
+  /*  border-radius: 10px; /* Στρογγυλεμένες γωνίες */
+/*} */

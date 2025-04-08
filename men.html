@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Collection</title>
+    <link rel="stylesheet" href="stylesShop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Yuji+Syuku&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image">
+        <header>
+            <h1>Our Men's Collection</h1>
+        </header>
+        <a href="shop.html" class="back-button">Back</a>
+        <div class="search-container">
+            <h2>What are you looking for?</h2>
+            <div class="options">
+                <a href="#" class="option" onclick="showProducts('bracelets'); showMessage()">Bracelets</a>
+                <a href="#" class="option" onclick="showProducts('rings')">Rings</a>
+                <a href="#" class="option" onclick="showProducts('necklaces')">Necklaces</a>
+                <a href="watches.html" class="option" onclick="showProducts('watches')">Watches</a>
+            </div>
+        </div>
+        <main>
+            <div class="catalog-container" id="catalog-container">
+                <!-- Προϊόντα θα προστεθούν εδώ μέσω JavaScript -->
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Efthimiadis Jewelry. All rights reserved.</p>
+    </footer>
+
+    <script src="scriptMen.js"></script> <!-- Εισαγωγή JavaScript -->
+</body>
+</html>

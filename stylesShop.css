@@ -1,0 +1,169 @@
+/* Reset βασικού styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Στυλ για το σώμα */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Background Image */
+.background-image {
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('images/men.jpg'); /* Φόντο εικόνας */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ύψος της οθόνης */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white; /* Λευκό κείμενο */
+}
+.background-image2 {
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('images/women.jpg'); /* Φόντο εικόνας */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Ύψος της οθόνης */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white; /* Λευκό κείμενο */
+}
+
+/* Στυλ για το header */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Σκούρο ημιδιαφανές φόντο */
+    width: 100%; /* Πλάτος header */
+    text-align: center;
+    padding: 20px 0; /* Χώρος γύρω από το κείμενο */
+}
+
+/* Στυλ για το κουμπί Back */
+.back-button {
+    position: fixed; /* Σταθερή θέση */
+    top: 20px; /* Απόσταση από την κορυφή */
+    left: 20px; /* Απόσταση από την αριστερή πλευρά */
+    background-color: rgba(255, 255, 255, 0.8); /* Λευκό ημιδιαφανές φόντο */
+    color: #333; /* Σκούρο κείμενο */
+    padding: 10px 15px; /* Εσωτερικός χώρος */
+    border-radius: 5px; /* Στρογγυλεμένες γωνίες */
+    text-decoration: none; /* Αφαίρεση υπογράμμισης */
+    transition: background-color 0.3s; /* Εφέ μετάβασης */
+    z-index: 1000; /* Για να είναι μπροστά από άλλα στοιχεία */
+}
+
+.back-button:hover {
+    background-color: #0e0e0e; /* Χρώμα κατά hover */
+    color: white; /* Λευκό κείμενο κατά hover */
+}
+
+/* Στυλ για το search-container */
+.search-container {
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0; /* Χώρος γύρω από το search container */
+    text-align: center; /* Κεντράρισμα κειμένου */
+}
+
+/* Στυλ για τις επιλογές */
+.options {
+    margin-top: 10px; /* Χώρος πάνω από τις επιλογές */
+}
+
+.option {
+    background-color: rgba(255, 255, 255, 0.8); /* Λευκό ημιδιαφανές φόντο */
+    color: #333; /* Σκούρο κείμενο */
+    padding: 10px 20px; /* Εσωτερικός χώρος */
+    margin: 5px; /* Χώρος γύρω από τις επιλογές */
+    border-radius: 5px; /* Στρογγυλεμένες γωνίες */
+    text-decoration: none; /* Αφαίρεση υπογράμμισης */
+    transition: background-color 0.3s; /* Εφέ μετάβασης */
+}
+
+.option:hover {
+    background-color: #080808; /* Χρώμα κατά hover */
+    color: white; /* Λευκό κείμενο κατά hover */
+}
+
+/* Στυλ για το κύριο περιεχόμενο */
+main {
+    padding: 20px; /* Χώρος γύρω από το κύριο περιεχόμενο */
+}
+
+
+/* Στυλ για το footer */
+footer {
+    text-align: center; /* Κεντράρισμα κειμένου */
+    padding: 20px 0; /* Χώρος γύρω από το κείμενο */
+    background-color: #3e3e3e; /* Σκούρο φόντο */
+    color: #fff; /* Λευκό κείμενο */
+    position: fixed;
+    bottom: 0;
+    width: 100%; /* Πλάτος footer */
+}
+
+.h2 {
+    font-family: "Yuji Syuku", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .catalog-menswatches-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Δύο στήλες */
+    grid-auto-rows: 400px; /* Ύψος για κάθε προϊόν */
+    gap: 50px; /* Κενό μεταξύ των στοιχείων */
+    justify-content: center; /* Κεντράρισμα στοιχείων */
+    align-items: start;
+    width: 150%;
+    margin: 50px auto;
+}
+
+.product {
+    width: 100%; /* Να πιάνει το διαθέσιμο χώρο */
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+}
+
+.product:nth-child(odd) {
+    grid-column: 1 / 2; /* Αριστερή στήλη για τα περιττά προϊόντα */
+}
+
+.product:nth-child(even) {
+    grid-column: 2 / 3; /* Δεξιά στήλη για τα άρτια προϊόντα */
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
